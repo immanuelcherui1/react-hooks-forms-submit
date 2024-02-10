@@ -16,6 +16,7 @@ function Form(props) {
   }
 
   function handleSubmit(event) {
+    event.preventDefault();
     if (firstName.length > 0) {
       const formData = { firstName: firstName, lastName: lastName };
       const dataArray = [...submittedData, formData];
